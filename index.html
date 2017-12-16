@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Homepage - Semantic</title>
+    <link rel="stylesheet" type="text/css" href="assets/dist/semantic.min.css">
+
+    <!-- CUSTOM CSS -->
+    <style type="text/css">
+
+        .ui.top.attached.secondary.pointing.menu {
+            justify-content: space-around;
+        }
+
+        #tabs > .ui.menu .item {
+            color: #B08B66;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+
+        .ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover {
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .ui.attached.menu:not(.tabular) {
+            border: 1px solid #373C42;
+        }
+
+        .ui.bottom.attached.tab.segment {
+            border: none;
+            background-color: #373C42;
+        }
+
+        div#tabs {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 5%;
+            background-color: #373C42;
+            color: white;
+        }
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 3px;
+            line-height: 30px;
+        }
+
+        h1 {
+            font-size: 54px;
+            text-transform: uppercase;
+            font-family: 'Capitolium-News-2'!important;
+            font-weight: normal;
+        }
+
+        h4.ui.header {
+            font-family: 'Dosis', sans-serif;
+            text-transform: uppercase;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 3px;
+            font-weight: normal;
+        }
+
+        #splash {
+            height: 100vh;
+            background-image: url("Home01.jpg");
+            background-attachment: fixed  !important;
+            background-position: center  !important;
+            background-repeat: no-repeat  !important;
+            background-size: cover  !important;
+        }
+
+        #splashtext {
+            margin-top: 60vh;
+            margin-right: 5vw !important;
+        }
+
+        .ui.large.secondary.inverted.pointing.menu {
+            border: none;
+        }
+
+        .parallax {
+            color: white;
+            /* The image used */
+            background-image: url("parallax.jpg") !important;
+
+            /* Full height */
+            height: 100%  !important;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed  !important;
+            background-position: center  !important;
+            background-repeat: no-repeat  !important;
+            background-size: cover  !important;
+        }
+
+    </style>
+
+    <!-- SEMANTIC CSS -->
+    <style type="text/css">
+        .hidden.menu {
+            display: none;
+        }
+
+        .masthead.segment {
+            min-height: 700px;
+            padding: 1em 0em;
+        }
+
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+
+        .masthead h1.ui.header {
+            margin-top: 0em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+            margin-bottom: unset;
+        }
+
+        .ui.vertical.stripe {
+            padding: 8em 0em;
+        }
+
+        .ui.vertical.stripe h3 {
+            font-size: 2em;
+        }
+
+        .ui.vertical.stripe .button+h3,
+        .ui.vertical.stripe p+h3 {
+            margin-top: 3em;
+        }
+
+        .ui.vertical.stripe .floated.image {
+            clear: both;
+        }
+
+        .ui.vertical.stripe p {
+            font-size: 1.33em;
+        }
+
+        .ui.vertical.stripe .horizontal.divider {
+            margin: 3em 0em;
+        }
+
+        .quote.stripe.segment {
+            padding: 0em;
+        }
+
+        .quote.stripe.segment .grid .column {
+            /* padding-top: 5em; */
+            /* padding-bottom: 5em; */
+        }
+
+        .footer.segment {
+            padding: 5em 0em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+            display: none;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .ui.fixed.menu {
+                display: none !important;
+            }
+            .secondary.pointing.menu .item,
+            .secondary.pointing.menu .menu {
+                display: none;
+            }
+            .secondary.pointing.menu .toc.item {
+                display: block;
+            }
+            .masthead.segment {
+                min-height: 350px;
+            }
+            .masthead h1.ui.header {
+                font-size: 2em;
+                margin-top: 1.5em;
+            }
+            .masthead h2 {
+                margin-top: 0.5em;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+
+    <script src="assets/library/jquery.min.js"></script>
+    <script src="assets/dist/components/visibility.js"></script>
+    <script src="assets/dist/components/sidebar.js"></script>
+    <script src="assets/dist/components/transition.js"></script>
+    <script src="assets/dist/components/tab.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function () {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function () {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    });
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
+
+                $('.menu .item')
+                    .tab();
+            });
+    </script>
+</head>
+
+<body>
+
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <div class="item">
+                <a class="ui button">Log in</a>
+            </div>
+            <div class="item">
+                <a class="ui primary button">Sign Up</a>
+            </div>
+            <div class="right menu">
+                <a href="index.html" class="active item">Home</a>
+                <a href="about.html" class="item">About</a>
+                <a href="services.html" class="item">Services</a>
+                <a href="contact.html" class="item">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a href="index.html" class="active item">Home</a>
+        <a href="about.html" class="item">About</a>
+        <a href="services.html" class="item">Services</a>
+        <a href="contact.html" class="item">Contact</a>
+    </div>
+
+
+    <!-- Page Contents -->
+    <div class="pusher">
+        <div id="splash" class="ui inverted vertical masthead center aligned segment">
+
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <div class="right item">
+                        <a href="index.html" class="active item">Home</a>
+                        <a href="about.html" class="item">About</a>
+                        <a href="services.html" class="item">Services</a>
+                        <a href="contact.html" class="item">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="splashtext" class="ui right aligned text container">
+                <h2>Do whatever you want when you want to.</h2>
+                <h1 class="ui inverted header">Imagine-a-Company</h1>
+                <div class="ui huge inverted button">Get Started
+                    <i class="right arrow icon"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui fluid center aligned container">
+                <h4 class="ui header">BUCKLEY WEALTH MANAGEMENT</h4>
+                <p>We are a team of wealth advisors serving the multigenerational needs of our clients and their families.</p>
+                <button class="ui secondary button">Explore</button><button class="ui secondary button">Contact Us</button>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe quote segment">
+            <div class="ui equal width stackable grid">
+                <div class="row">
+                    <div class="column" style="padding:0px;">
+                        <img src="bp02.jpg" alt="">
+                    </div>
+                    <div id="tabs" class="column">
+                        <div class="ui top attached secondary pointing menu">
+                        <a class="item active" data-tab="first">Approach</a>
+                        <a class="item" data-tab="second">Standard</a>
+                        <a class="item" data-tab="third">Relationship</a>
+                        </div>
+                        <div class="ui bottom attached tab segment active" data-tab="first">
+                        <h1>Our Approach</h1>
+                        <p style="color:white;">
+                            Our approach to wealth management is founded upon in-depth, ongoing knowledge of our clients. Open communication, exceptional service, and mutual understanding are the cornerstones of our practice.
+                        </p>
+                        </div>
+                        <div class="ui bottom attached tab segment" data-tab="second">
+                        <h1>Our Standard</h1>
+                        <p style="color:white;">
+                            Our team has always believed that our clients’ interests are paramount. By forming Buckley Wealth Management, LLC as a Registered Investment Adviser, we have reinforced our commitment to always act in our clients’ best interests.
+                        </p>
+                        </div>
+                        <div class="ui bottom attached tab segment" data-tab="third">
+                        <h1>Our Relationship</h1>
+                        <p style="color:white;">
+                            Our client relationships are based on trust and begin much like a first-time visit to a medical professional; we learn your history, gather the facts about your condition, discuss diagnoses and treatment options, implement a course of treatment, and then regularly monitor your condition, recommending adjustments as needed to meet your goals.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui fluid center aligned container">
+                <h3 class="ui header">STRATEGIC AFFILIATIONS</h3>
+                <p>We have partnered with Fidelity and Dynasty to bring our clients quality, trusted resources. These strategic <br>affiliations enable the Buckley Wealth Management team to provide holistic solutions for our clients.</p>
+            </div>
+        </div>
+
+        <div class="ui vertical parallax stripe segment">
+            <div class="ui fluid center aligned container">
+                <h2 class="ui inverted header">OUR CLIENTS</h2>
+                <p>We’ll be by your side as you begin to save for your children’s education and <br>as you approach the retirement phase of your life.</p>
+                <p>Our team will work with you to meet your financial objectives as your <br>business and family grow and as life’s milestones are met.</p>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe quote segment">
+            <div class="ui equal width stackable divided grid">
+                <div class="center aligned row">
+                    <div class="middle aligned column">
+                        <img src="LG02.png" alt="logo">
+                        <p>The next phase of your life deserves careful planning and attention to every unique detail.</p>
+                    </div>
+                    <div class="left aligned column">
+                        <h3>Contact Us</h3>
+                        <p>
+                            <i class="circular mail outline icon"></i>
+                            info@buckleywealth.com
+                        </p>
+                        <p>
+                            <i class="circular mobile icon"></i>
+                            702-805-1010
+                        </p>
+                        <p>
+                            <i class="circular marker icon"></i>
+                            10100 West Charleston Blvd., #213 Las Vegas
+                        </p>
+                    </div>
+                    <div class="left aligned column">
+                        <h3>Stay in touch</h3>
+                        <p>Sign up for our newsletter to stay up-to-date</p>
+                        <form class="ui form">
+                            <div class="field">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="field">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <button class="ui fluid button" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+
+                <div class="row">
+                    <div class="center aligned column">
+                        <p>© 2017. All Rights Reserved.</p>
+                        <p>
+                            Buckley Wealth Management, LLC is a Registered Investment Adviser. Advisory services are only offered to clients or prospective
+                            clients where Buckley Wealth Management, LLC and its representatives are properly licensed or exempt from licensure. This website
+                            is solely for informational purposes. Past performance is no guarantee of future returns. Investing involves risk and possible loss
+                            of principal capital. No advice may be rendered by Buckley Wealth Management, LLC unless a client service agreement is in place.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
