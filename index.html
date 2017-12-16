@@ -14,6 +14,24 @@
     <!-- CUSTOM CSS -->
     <style type="text/css">
 
+        img.footerlogo {
+            margin-bottom: 15px;
+        }
+
+        div#footer1 {
+            padding-top: 3%;
+        }
+
+        div#footer2 {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        .footer.column {
+            padding-left: 2% !important;
+            padding-right: 2% !important;
+        }
+
         .ui.top.attached.secondary.pointing.menu {
             justify-content: space-around;
         }
@@ -22,6 +40,7 @@
             color: #B08B66;
             font-size: 1.2em;
             letter-spacing: 2px;
+            margin-bottom: 5%;
         }
 
         .ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover {
@@ -43,6 +62,7 @@
             padding-top: 5%;
             background-color: #373C42;
             color: white;
+            margin-bottom: 4px;
         }
 
         p {
@@ -301,7 +321,7 @@
             </div>
         </div>
 
-        <div class="ui vertical stripe quote segment">
+        <div class="ui vertical stripe quote segment" style="border-bottom:none;">
             <div class="ui equal width stackable grid">
                 <div class="row">
                     <div class="column" style="padding:0px;">
@@ -338,43 +358,45 @@
 
         <div class="ui vertical stripe segment">
             <div class="ui fluid center aligned container">
-                <h3 class="ui header">STRATEGIC AFFILIATIONS</h3>
+                <h4 class="ui header">STRATEGIC AFFILIATIONS</h4>
                 <p>We have partnered with Fidelity and Dynasty to bring our clients quality, trusted resources. These strategic <br>affiliations enable the Buckley Wealth Management team to provide holistic solutions for our clients.</p>
             </div>
         </div>
 
         <div class="ui vertical parallax stripe segment">
             <div class="ui fluid center aligned container">
-                <h2 class="ui inverted header">OUR CLIENTS</h2>
-                <p>We’ll be by your side as you begin to save for your children’s education and <br>as you approach the retirement phase of your life.</p>
-                <p>Our team will work with you to meet your financial objectives as your <br>business and family grow and as life’s milestones are met.</p>
+                <h1>OUR CLIENTS</h1>
+                <p style="color:white;">We’ll be by your side as you begin to save for your children’s education and <br>as you approach the retirement phase of your life.</p>
+                <br>
+                <p style="color:white;">Our team will work with you to meet your financial objectives as your <br>business and family grow and as life’s milestones are met.</p>
             </div>
         </div>
 
-        <div class="ui vertical stripe quote segment">
+        <div id="footer1" class="ui vertical stripe quote segment">
             <div class="ui equal width stackable divided grid">
                 <div class="center aligned row">
-                    <div class="middle aligned column">
-                        <img src="LG02.png" alt="logo">
+                    <div class="left aligned footer column">
+                        <img src="LG02.png" alt="logo" class="footerlogo">
                         <p>The next phase of your life deserves careful planning and attention to every unique detail.</p>
                     </div>
-                    <div class="left aligned column">
-                        <h3>Contact Us</h3>
-                        <p>
-                            <i class="circular mail outline icon"></i>
-                            info@buckleywealth.com
-                        </p>
-                        <p>
-                            <i class="circular mobile icon"></i>
-                            702-805-1010
-                        </p>
-                        <p>
-                            <i class="circular marker icon"></i>
-                            10100 West Charleston Blvd., #213 Las Vegas
-                        </p>
+                    <div class="ui one column grid">
+                        <div class="left aligned column">
+                            <h4>CONTACT US</h4>
+                        </div>
+                        <div class="one column row">
+                            <div class="left aligned column" style="padding-bottom:10px;">
+                                <p><i class="circular mail outline icon"></i>info@email.com</p>
+                            </div>
+                            <div class="left aligned column" style="padding-bottom:10px;">
+                                <p><i class="circular mobile icon"></i>702-805-1010</p>
+                            </div>
+                            <div class="left aligned column" style="padding-bottom:10px;">
+                                <p><i class="circular marker icon"></i>10100 West Charleston Blvd., #213 Las Vegas</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="left aligned column">
-                        <h3>Stay in touch</h3>
+                    <div class="left aligned footer column">
+                        <h4>STAY IN TOUCH</h4>
                         <p>Sign up for our newsletter to stay up-to-date</p>
                         <form class="ui form">
                             <div class="field">
@@ -392,9 +414,8 @@
             </div>
         </div>
 
-        <div class="ui vertical stripe segment">
-            <div class="ui middle aligned stackable grid container">
-
+        <div id="footer2" class="ui vertical stripe segment">
+            <div class="ui stackable grid">
                 <div class="row">
                     <div class="center aligned column">
                         <p>© 2017. All Rights Reserved.</p>
