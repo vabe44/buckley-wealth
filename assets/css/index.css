@@ -1,22 +1,3 @@
-img.footerlogo {
-    margin-bottom: 15px;
-}
-
-div#footer1 {
-    padding-top: 3%;
-}
-
-div#footer2 {
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: smaller;
-}
-
-.footer.column {
-    padding-left: 2% !important;
-    padding-right: 2% !important;
-}
-
 .ui.top.attached.secondary.pointing.menu {
     justify-content: space-around;
 }
@@ -52,7 +33,7 @@ div#tabs {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 14px !important;
     color: #000000;
     letter-spacing: 3px;
     line-height: 30px;
@@ -72,6 +53,83 @@ h4.ui.header {
     line-height: 18px;
     letter-spacing: 3px;
     font-weight: normal;
+}
+
+h4.ui.header:after, h4.ui.header:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid #000000;
+    margin: 0 14px 4px;
+}
+
+/* a.indexlink {
+    color: black;
+    letter-spacing: 3px;
+    font-size: larger;
+    font-weight: 400;
+} */
+
+.wrapper {
+    margin: 3em 0;
+}
+
+a.indexlink,
+a.indexlink:visited,
+a.indexlink:hover,
+a.indexlink:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a.indexlink:hover {
+    color: black;
+}
+
+a.indexlink.before:before,
+a.indexlink.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+a.indexlink.before:before {
+    top: -0.25em;
+}
+
+a.indexlink.after:after {
+    bottom: -0.25em;
+}
+
+a.indexlink.before:before,
+a.indexlink.after:after {
+    height: 5px;
+    height: 0.2rem;
+    width: 0;
+    background: #d73444;
+    margin-bottom: -5px;
+}
+
+a.indexlink:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+a.indexlink.before:hover:before,
+a.indexlink.after:hover:after {
+    width: 25px;
 }
 
 #splash {

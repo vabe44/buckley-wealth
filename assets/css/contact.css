@@ -1,0 +1,102 @@
+#splash {
+    height: 100vh;
+    background-image: url("../images/bp01.png");
+    background-attachment: fixed  !important;
+    background-position: center  !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover  !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#splashtext {
+    margin-bottom: 30vh;
+    color: white;
+}
+
+#splashtext h3 {
+    font-size: 32px;
+    letter-spacing: 5.5px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+#splashtext h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#splashtext h1 {
+    font-size: 105px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+#splashtext p {
+    color: white;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.contactinfo.row {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.contactform h5.ui.header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.ui.form input[type=text], .ui.form input[type=email], .ui.form textarea {
+    border: unset;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px !important;
+    color: #000000;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: 'Capitolium-News-2'!important;
+    font-weight: normal;
+}
+
+h4.ui.header {
+    font-family: 'Capitolium-News-2'!important;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 4.5px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.ui.large.secondary.inverted.pointing.menu {
+    border: none;
+}
+
+.parallax {
+    color: white;
+    /* The image used */
+    background-image: url("../images/parallax.jpg") !important;
+
+    /* Full height */
+    height: 100%  !important;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed  !important;
+    background-position: center  !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover  !important;
+}
