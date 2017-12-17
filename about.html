@@ -10,141 +10,8 @@
     <!-- Site Properties -->
     <title>Homepage - Semantic</title>
     <link rel="stylesheet" type="text/css" href="assets/dist/semantic.min.css">
-
-    <!-- CUSTOM CSS -->
-    <style type="text/css">
-        #splash {
-            height: 100vh;
-            background-image: url("ap02.jpg");
-            background-attachment: fixed  !important;
-            background-position: center  !important;
-            background-repeat: no-repeat  !important;
-            background-size: cover  !important;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .ui.large.secondary.inverted.pointing.menu {
-            border: none;
-        }
-
-        .parallax {
-            color: white;
-            /* The image used */
-            background-image: url("parallax.jpg") !important;
-
-            /* Full height */
-            height: 100%  !important;
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed  !important;
-            background-position: center  !important;
-            background-repeat: no-repeat  !important;
-            background-size: cover  !important;
-        }
-
-    </style>
-
-    <!-- SEMANTIC CSS -->
-    <style type="text/css">
-        .hidden.menu {
-            display: none;
-        }
-
-        .masthead.segment {
-            min-height: 700px;
-            padding: 1em 0em;
-        }
-
-        .masthead .logo.item img {
-            margin-right: 1em;
-        }
-
-        .masthead .ui.menu .ui.button {
-            margin-left: 0.5em;
-        }
-
-        .masthead h1.ui.header {
-            margin-top: 0em;
-            margin-bottom: 0em;
-            font-size: 4em;
-            font-weight: normal;
-            margin-bottom: 10px;
-        }
-
-        .masthead h2 {
-            font-size: 1.7em;
-            font-weight: normal;
-            margin-bottom: unset;
-        }
-
-        .ui.vertical.stripe {
-            padding: 8em 0em;
-        }
-
-        .ui.vertical.stripe h3 {
-            font-size: 2em;
-        }
-
-        .ui.vertical.stripe .button+h3,
-        .ui.vertical.stripe p+h3 {
-            margin-top: 3em;
-        }
-
-        .ui.vertical.stripe .floated.image {
-            clear: both;
-        }
-
-        .ui.vertical.stripe p {
-            font-size: 1.33em;
-        }
-
-        .ui.vertical.stripe .horizontal.divider {
-            margin: 3em 0em;
-        }
-
-        .quote.stripe.segment {
-            padding: 0em;
-        }
-
-        .quote.stripe.segment .grid .column {
-            /* padding-top: 5em; */
-            /* padding-bottom: 5em; */
-        }
-
-        .footer.segment {
-            padding: 5em 0em;
-        }
-
-        .secondary.pointing.menu .toc.item {
-            display: none;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .ui.fixed.menu {
-                display: none !important;
-            }
-            .secondary.pointing.menu .item,
-            .secondary.pointing.menu .menu {
-                display: none;
-            }
-            .secondary.pointing.menu .toc.item {
-                display: block;
-            }
-            .masthead.segment {
-                min-height: 350px;
-            }
-            .masthead h1.ui.header {
-                font-size: 2em;
-                margin-top: 1.5em;
-            }
-            .masthead h2 {
-                margin-top: 0.5em;
-                font-size: 1.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
 
     <script src="assets/library/jquery.min.js"></script>
     <script src="assets/dist/components/visibility.js"></script>
@@ -226,28 +93,28 @@
             </div>
 
             <div id="splashtext" class="ui bottom aligned text container">
-                <div class="ui huge inverted button">Get Started
+                <div class="ui huge inverted button">About Us
                     <i class="right arrow icon"></i>
                 </div>
             </div>
 
         </div>
 
-        <div class="ui vertical stripe segment">
-            <div class="ui fluid center aligned container">
-                <h4 class="ui header">WHO WE ARE</h4>
-                <p>We are dedicated to providing unparalleled service to our clients.</p>
-                <p>The next phase of your life deserves careful planning and attention to every unique detail.</p>
-                <button class="ui secondary button">Explore</button>
+        <div id="whoweare" class="ui vertical stripe segment">
+            <div class="ui fluid center aligned text container">
+                <h4 class="ui inverted header">WHO WE ARE</h4>
+                <p style="color:white;">We are dedicated to providing unparalleled service to our clients.</p>
+                <p style="color:white;font-size:smaller;">The next phase of your life deserves careful planning and attention to every unique detail.</p>
+                <img src="assets/images/rombo.png" alt="rombo">
             </div>
         </div>
 
         <div class="ui vertical stripe quote segment">
-            <div class="ui equal width stackable divided grid">
+            <div class="ui equal width stackable grid">
                 <div class="center aligned row">
-                    <div class="top aligned column">
+                    <div class="top aligned whoweare column">
                         <i class="bar chart icon"></i>
-                        <p>RIA</p>
+                        <h4 class="ui header">RIA</h4>
                         <p>
                             Buckley Wealth Management, LLC is an Independent Registered Investment Adviser,
                             registered with the Securities and Exchange Commission in 2017. Our team of financial
@@ -256,18 +123,18 @@
                             even greater interest in the people we serve.
                         </p>
                     </div>
-                    <div class="top aligned column">
-                        <i class="user outline icon"></i>
-                        <p>FOUNDER</p>
+                    <div class="top aligned whoweare column">
+                        <i class="user circle outline icon"></i>
+                        <h4 class="ui header">FOUNDER</h4>
                         <p>
                             Brian J. Buckley, our firm’s founder and owner, offers more than 38 years of financial services
                             experience, but equally important, he offers an unwavering commitment to each client. Hard work,
                             integrity, and faith in his team and his clients characterize his long career.
                         </p>
                     </div>
-                    <div class="top aligned column">
+                    <div class="top aligned whoweare column">
                         <i class="empty heart icon"></i>
-                        <p>CLIENTS</p>
+                        <h4 class="ui header">CLIENTS</h4>
                         <p>
                             We work diligently for our clients every day. We’ve built a business committed to providing exceptional
                             service, always putting you first, and evolving our methods to provide wealth management solutions that
@@ -279,58 +146,61 @@
         </div>
 
         <div class="ui vertical stripe quote segment">
-            <div class="ui equal width stackable grid">
-                <div class="left aligned row">
-                    <div class="column">
-                        <p>MEET THE TEAM</p>
-                        <p>WHO WE ARE</p>
-                    </div>
-                </div>
-                <div class="center aligned row">
-                    <div class="column" style="padding:0px;">
-                        <img src="Brian.jpg" alt="">
-                        <p>BRIAN J. BUCKLEY</p>
-                        <p>Managing Partner/CIO</p>
-                        <p><i class="linkedin icon"></i></p>
-                        <p>
-                            Brian brings more than 38 years of experience to the service of our clients, as well as a keen understanding of the complexities that so often accompany wealth. He was one of the first Financial Advisors to earn the prestigious Certified Investment Management Analyst® (CIMA®) designation from The Wharton School in 1988.
-                        </p>
-                    </div>
-                    <div class="column" style="padding:0px;">
-                        <img src="Lori.jpg" alt="">
-                        <p>LORI CHITTENDEN</p>
-                        <p>Portfolio Manager</p>
-                        <p><i class="linkedin icon"></i></p>
-                        <p>
-                            Lori Chittenden brings a wealth of knowledge about financial planning. A CERTIFIED FINANCIAL PLANNER® Lori has completed the CFP® exam — one of the generalist marks that financial advisors receive after undergoing a rigorous accreditation process. Lori has worked in several investment offices around the country, but returned to Las Vegas in 2013 to work again with Brian Buckley and his team.
-                        </p>
-                    </div>
-                    <div class="column" style="padding:0px;">
-                        <img src="Dawn.jpg" alt="">
-                        <p>DAWN BUCHAN</p>
-                        <p>Director of Operations</p>
-                        <p><i class="linkedin icon"></i></p>
-                        <p>
-                            Since 1978, Dawn has provided client service and strategic operational and administrative support to investment clients. In 1978 she moved to Las Vegas and joined PaineWebber, learning the ins and outs of back office operations. In 1983 she moved to Dean Witter Reynolds, which eventually merged into Morgan Stanley.  In 2010 she brought her knowledge of the industry to Brian’s team and quickly became the gracious initial point of contact for our clients.
-                        </p>
-                    </div>
-                    <div class="column" style="padding:0px;">
-                        <img src="Sonia.jpg" alt="">
-                        <p>SONIA PITTMAN</p>
-                        <p>Financial Analyst</p>
-                        <p><i class="linkedin icon"></i></p>
-                        <p>
-                            Sonia’s financial career began with Morgan Stanley in Tucson after she graduated from the University of Arizona. She moved to Las Vegas in 2005 and began working directly for the Branch Manager, providing overall administrative support for the branch including matters affecting the branch facilities, financial advisors, and support staff. She worked for two other financial advisory firms and then returned to Morgan Stanley in 2012.
-                        </p>
-                    </div>
-                </div>
+            <div class="ui container">
+                    <div class="ui equal width stackable grid">
+                            <div class="left aligned row">
+                                <div class="column">
+                                    <p>MEET THE TEAM</p>
+                                    <h1>WHO WE ARE</h1>
+                                </div>
+                            </div>
+                            <div class="center aligned row">
+                                <div class="meettheteam column" style="padding:0px;">
+                                    <img src="assets/images/Brian.jpg" alt="">
+                                    <h4>BRIAN J. BUCKLEY</h4>
+                                    <p class="meettheteam subtitle">Managing Partner/CIO</p>
+                                    <p><i class="linkedin icon"></i></p>
+                                    <p class="meettheteam text">
+                                        Brian brings more than 38 years of experience to the service of our clients, as well as a keen understanding of the complexities that so often accompany wealth. He was one of the first Financial Advisors to earn the prestigious Certified Investment Management Analyst® (CIMA®) designation from The Wharton School in 1988.
+                                    </p>
+                                </div>
+                                <div class="meettheteam column" style="padding:0px;">
+                                    <img src="assets/images/Lori.jpg" alt="">
+                                    <h4>LORI CHITTENDEN</h4>
+                                    <p class="meettheteam subtitle">Portfolio Manager</p>
+                                    <p><i class="linkedin icon"></i></p>
+                                    <p class="meettheteam text">
+                                        Lori Chittenden brings a wealth of knowledge about financial planning. A CERTIFIED FINANCIAL PLANNER® Lori has completed the CFP® exam — one of the generalist marks that financial advisors receive after undergoing a rigorous accreditation process. Lori has worked in several investment offices around the country, but returned to Las Vegas in 2013 to work again with Brian Buckley and his team.
+                                    </p>
+                                </div>
+                                <div class="meettheteam column" style="padding:0px;">
+                                    <img src="assets/images/Dawn.jpg" alt="">
+                                    <h4>DAWN BUCHAN</h4>
+                                    <p class="meettheteam subtitle">Director of Operations</p>
+                                    <p><i class="linkedin icon"></i></p>
+                                    <p class="meettheteam text">
+                                        Since 1978, Dawn has provided client service and strategic operational and administrative support to investment clients. In 1978 she moved to Las Vegas and joined PaineWebber, learning the ins and outs of back office operations. In 1983 she moved to Dean Witter Reynolds, which eventually merged into Morgan Stanley.  In 2010 she brought her knowledge of the industry to Brian’s team and quickly became the gracious initial point of contact for our clients.
+                                    </p>
+                                </div>
+                                <div class="meettheteam column" style="padding:0px;">
+                                    <img src="assets/images/Sonia.jpg" alt="">
+                                    <h4>SONIA PITTMAN</h4>
+                                    <p class="meettheteam subtitle">Financial Analyst</p>
+                                    <p><i class="linkedin icon"></i></p>
+                                    <p class="meettheteam text">
+                                        Sonia’s financial career began with Morgan Stanley in Tucson after she graduated from the University of Arizona. She moved to Las Vegas in 2005 and began working directly for the Branch Manager, providing overall administrative support for the branch including matters affecting the branch facilities, financial advisors, and support staff. She worked for two other financial advisory firms and then returned to Morgan Stanley in 2012.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
             </div>
+
         </div>
 
         <div class="ui vertical stripe segment">
             <div class="ui center aligned container">
-                <i class="leaf icon"></i>
-                <h3 class="ui header">WHY A BRISTLECONE?</h3>
+                <i class="leaf icon" style="font-size:40px;"></i>
+                <h4 class="ui header">WHY A BRISTLECONE?</h4>
                 <p>
                     The tree itself – long-lived, resilient, adaptable – beautiful in form and character. Great Basin bristlecone pines (Pinus longaeva) are the oldest non-clonal trees on earth. In Nevada, the oldest trees are found in the mountain ranges of Eastern Nevada. At lower elevations, the bristlecones grow more upright and are covered with green foliage. Above the timberline, high winds, drought, extreme cold, and short growing seasons slow the growth of the trees and contort them into twisted, gnarly forms covered with small amounts of long-lived foliage. The wood becomes dense and resistant to pests, rot, and erosion. Low foliage reduces the risk of fire. The oldest trees are found where the conditions are the most demanding.
                 </p>
@@ -342,8 +212,8 @@
 
         <div class="ui vertical stripe segment">
             <div class="ui center aligned container">
-                <i class="globe icon"></i>
-                <h3 class="ui header">BRIAN’S INVOLVEMENT WITH THE ESTABLISHMENT OF THE GREAT BASIN NATIONAL PARK</h3>
+                <i class="globe icon" style="font-size:40px;"></i>
+                <h4 class="ui header">BRIAN’S INVOLVEMENT WITH THE ESTABLISHMENT OF THE GREAT BASIN NATIONAL PARK</h4>
                 <p>
                     In 1998, after decades of failed attempts to establish a national park in the Great Basin, a group of dedicated Nevadans joined together to create an advocacy and fundraising group to support the creation of the park. The remarkable chairwoman of the new Great Basin National Park Foundation asked Brian to help. Under her steady leadership, the park’s visitors’ center was built, a new bridge crossed Baker Creek, and an oral history program was started to capture the memories of Great Basin residents. In 1986 President Reagan signed the Great Basin National Park Act of 1986 and launched Nevada’s first national park. We honor those who worked to establish this park and those who maintain it today.
                 </p>
@@ -352,15 +222,15 @@
 
         <div class="ui vertical stripe segment">
             <div class="ui center aligned container">
-                <i class="power on icon"></i>
-                <h3 class="ui header">IN 1987, THE NEVADA LEGISLATURE ADOPTED THE BRISTLECONE PINE AS THE STATE’S SECOND STATE TREE.</h3>
+                <i class="power on icon" style="font-size:40px;"></i>
+                <h4 class="ui header">IN 1987, THE NEVADA LEGISLATURE ADOPTED THE BRISTLECONE PINE AS THE STATE’S SECOND STATE TREE.</h4>
             </div>
         </div>
 
         <div class="ui vertical stripe segment">
             <div class="ui center aligned container">
-                <h3 class="ui header">CONNECT WITH US ON LINKEDIN</h3>
-                <i class="linkedin icon"></i>
+                <h5 class="ui header">CONNECT WITH US ON LINKEDIN</h5>
+                <i class="linkedin icon" style="font-size:50px;margin-top:20px;"></i>
             </div>
         </div>
 

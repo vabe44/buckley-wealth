@@ -10,145 +10,8 @@
     <!-- Site Properties -->
     <title>Homepage - Semantic</title>
     <link rel="stylesheet" type="text/css" href="assets/dist/semantic.min.css">
-
-    <!-- CUSTOM CSS -->
-    <style type="text/css">
-        #splash {
-            height: 100vh;
-            background-image: url("bp03.jpg");
-            background-attachment: fixed  !important;
-            background-position: center  !important;
-            background-repeat: no-repeat  !important;
-            background-size: cover  !important;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        #splashtext {
-            margin-bottom: 40vh;
-        }
-
-        .ui.large.secondary.inverted.pointing.menu {
-            border: none;
-        }
-
-        .parallax {
-            color: white;
-            /* The image used */
-            background-image: url("parallax.jpg") !important;
-
-            /* Full height */
-            height: 100%  !important;
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed  !important;
-            background-position: center  !important;
-            background-repeat: no-repeat  !important;
-            background-size: cover  !important;
-        }
-
-    </style>
-
-    <!-- SEMANTIC CSS -->
-    <style type="text/css">
-        .hidden.menu {
-            display: none;
-        }
-
-        .masthead.segment {
-            min-height: 700px;
-            padding: 1em 0em;
-        }
-
-        .masthead .logo.item img {
-            margin-right: 1em;
-        }
-
-        .masthead .ui.menu .ui.button {
-            margin-left: 0.5em;
-        }
-
-        .masthead h1.ui.header {
-            margin-top: 0em;
-            margin-bottom: 0em;
-            font-size: 4em;
-            font-weight: normal;
-            margin-bottom: 10px;
-        }
-
-        .masthead h2 {
-            font-size: 1.7em;
-            font-weight: normal;
-            margin-bottom: unset;
-        }
-
-        .ui.vertical.stripe {
-            padding: 8em 0em;
-        }
-
-        .ui.vertical.stripe h3 {
-            font-size: 2em;
-        }
-
-        .ui.vertical.stripe .button+h3,
-        .ui.vertical.stripe p+h3 {
-            margin-top: 3em;
-        }
-
-        .ui.vertical.stripe .floated.image {
-            clear: both;
-        }
-
-        .ui.vertical.stripe p {
-            font-size: 1.33em;
-        }
-
-        .ui.vertical.stripe .horizontal.divider {
-            margin: 3em 0em;
-        }
-
-        .quote.stripe.segment {
-            padding: 0em;
-        }
-
-        .quote.stripe.segment .grid .column {
-            /* padding-top: 5em; */
-            /* padding-bottom: 5em; */
-        }
-
-        .footer.segment {
-            padding: 5em 0em;
-        }
-
-        .secondary.pointing.menu .toc.item {
-            display: none;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .ui.fixed.menu {
-                display: none !important;
-            }
-            .secondary.pointing.menu .item,
-            .secondary.pointing.menu .menu {
-                display: none;
-            }
-            .secondary.pointing.menu .toc.item {
-                display: block;
-            }
-            .masthead.segment {
-                min-height: 350px;
-            }
-            .masthead h1.ui.header {
-                font-size: 2em;
-                margin-top: 1.5em;
-            }
-            .masthead h2 {
-                margin-top: 0.5em;
-                font-size: 1.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/services.css">
 
     <script src="assets/library/jquery.min.js"></script>
     <script src="assets/dist/components/visibility.js"></script>
@@ -229,7 +92,7 @@
                 </div>
             </div>
 
-            <div id="splashtext" class="ui middle aligned text container">
+            <div id="splashtext" class="ui middle aligned">
                 <h3>LOVE AND DETERMINATION</h3>
                 <h1>FOR ALL WE DO</h1>
                 <div class="ui huge inverted button">explore what we do</div>
@@ -241,45 +104,49 @@
             <div class="ui equal width stackable internally celled grid">
                 <div class="center aligned row">
                     <div class="column" style="padding:0px;">
-                        <img src="bp04.jpg" alt="">
+                        <img src="assets/images/bp04.jpg" alt="">
                     </div>
                     <div class="middle aligned column">
-                        <i class="maximize icon"></i>
-                        <p>EVOLUTION</p>
-                        <p>
-                            Over the past 38 years our business has changed significantly. Originally, advisors primarily bought and
-                            sold stocks and bonds and received a commission for those transactions. About 20 years ago, we began to
-                            migrate toward a strategy of portfolio management including the hiring of third-party investment managers
-                            where appropriate. In 2010, we developed our in-house investment process to complement our third-party managers.
-                        </p>
+                        <i class="maximize icon" style="font-size:40px;"></i>
+                        <h4 class="ui header">EVOLUTION</h4>
+                        <div class="ui services text container">
+                            <p style="font-size:smaller;">
+                                Over the past 38 years our business has changed significantly. Originally, advisors primarily bought and
+                                sold stocks and bonds and received a commission for those transactions. About 20 years ago, we began to
+                                migrate toward a strategy of portfolio management including the hiring of third-party investment managers
+                                where appropriate. In 2010, we developed our in-house investment process to complement our third-party managers.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="center aligned row">
                     <div class="middle aligned column">
-                        <i class="rocket icon"></i>
-                        <p>INDEPENDENCE</p>
-                        <p>
-                                Now, as a robust and independent RIA, our most important responsibility is to ensure the secure safekeeping of
-                                your assets. We have chosen Fidelity Clearing & Custody Solutions (FCCS) to act as custodian of our clients’ assets.
-                                FCCS is one of the largest providers of clearing and settlement services in the world and is part of Fidelity Investments.
-                                FCCS provides a comprehensive clearing and custody platform, brokerage services, and trading capabilities built upon
-                                a foundation of exceptional people and transformative technology.
-                        </p>
+                        <i class="rocket icon" style="font-size:40px;"></i>
+                        <h4 class="ui header">INDEPENDENCE</h4>
+                        <div class="ui services text container">
+                            <p style="font-size:smaller;">
+                                    Now, as a robust and independent RIA, our most important responsibility is to ensure the secure safekeeping of
+                                    your assets. We have chosen Fidelity Clearing & Custody Solutions (FCCS) to act as custodian of our clients’ assets.
+                                    FCCS is one of the largest providers of clearing and settlement services in the world and is part of Fidelity Investments.
+                                    FCCS provides a comprehensive clearing and custody platform, brokerage services, and trading capabilities built upon
+                                    a foundation of exceptional people and transformative technology.
+                            </p>
+                        </div>
                     </div>
                     <div class="column" style="padding:0px;">
-                        <img src="bp05.jpg" alt="">
+                        <img src="assets/images/bp05.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="ui vertical stripe quote segment">
-            <div class="ui equal width stackable divided grid">
-                <div class="center aligned row">
+            <div class="ui equal width stackable grid">
+                <div class="center aligned row" style="padding-top:10%;">
                     <div class="top aligned column">
-                        <i class="bar chart icon"></i>
-                        <p>BUILD</p>
-                        <p>
+                        <i class="home icon" style="font-size:50px;font-weight:400;"></i>
+                        <h4 class="ui header">BUILD</h4>
+                        <p class="servicestext">
                             In some ways, the years you spend accumulating assets are a bit like the exhibition season before games really count.
                             Your assets may rise and fall in value, but you don’t really need them to meet expenses. Once you retire, however, the
                             regular season begins. You’ll be using your assets and since you are no longer working, you will not be earning income to
@@ -291,9 +158,9 @@
                         </p>
                     </div>
                     <div class="top aligned column">
-                        <i class="user outline icon"></i>
-                        <p>DISTRIBUTE</p>
-                        <p>
+                        <i class="line chart icon" style="font-size:50px;font-weight:400;"></i>
+                        <h4 class="ui header">DISTRIBUTE</h4>
+                        <p class="servicestext">
                             Your estate plan is essentially an extension of your retirement distribution strategy. Instead of planning distributions
                             for yourself, however, you are planning them for other family members. As a result, we try to learn as much as we can about
                             those family members – what you want for each of them and whether some need more financial support than others. Are there
@@ -304,9 +171,9 @@
                         </p>
                     </div>
                     <div class="top aligned column">
-                        <i class="empty heart icon"></i>
-                        <p>TRANSFER</p>
-                        <p>
+                        <i class="bookmark icon" style="font-size:50px;font-weight:400;"></i>
+                        <h4 class="ui header">TRANSFER</h4>
+                        <p class="servicestext">
                             Some heirs are hardworking and financially savvy. Others are equally hard working but lack the experience to manage substantial assets.
                             Still others place a priority on philanthropy, while their siblings or children spend more than they earn.
                             You know your family and understand their unique dynamics. You know who everyone looks to for guidance and who needs that guidance most.
@@ -321,11 +188,11 @@
             </div>
         </div>
 
-        <div class="ui vertical stripe segment">
+        <div id="workwithus" class="ui vertical stripe segment">
             <div class="ui fluid center aligned container">
-                <h4 class="ui header">WORK WITH US</h4>
-                <h2>We would love to discuss how Buckley Wealth Management could serve your financial needs.</h2>
-                <p>info@buckleywealth.com</p>
+                <h5 class="ui inverted header">WORK WITH US</h5>
+                <h2 class="ui inverted header" style="font-weight:400;">We would love to discuss how Buckley Wealth Management could serve your financial needs.</h2>
+                <a class="mailtolink" href="mailto:info@buckleywealth.com">info@buckleywealth.com</a>
             </div>
         </div>
 
@@ -333,53 +200,55 @@
             <div class="ui fluid center aligned container">
                 <h4 class="ui header">SERVICES</h4>
                 <h1>BWM SERVICE OFFERING</h1>
-                <p>Through our passion for the industry and determination to serve our clients well, we promise to:</p>
+                <p>Through our passion for the industry and determination to serve our <br> clients well, we promise to:</p>
             </div>
         </div>
 
 
-        <div class="ui three column grid">
-            <div class="center aligned column">
-                <i class="empty heart icon"></i>
-                <p>FIDUCIARY</p>
-                <p>
-                    Serve as a fiduciary who puts your interests first.
-                </p>
-            </div>
-            <div class="center aligned column">
-                <i class="empty heart icon"></i>
-                <p>CUSTODIAN</p>
-                <p>
-                    Engage a third party custodian – a secure, stable, highly reputable financial safekeeping company.
-                </p>
-            </div>
-            <div class="center aligned column">
-                <i class="empty heart icon"></i>
-                <p>IDEAS</p>
-                <p>
-                    React quickly to new ideas – a benefit of autonomy from a distant bureaucracy.
-                </p>
-            </div>
-            <div class="center aligned column">
-                <i class="empty heart icon"></i>
-                <p>THIRD-PARTY</p>
-                <p>
-                    Secure third-party service providers who provide compliance support, technology, and marketing.
-                </p>
-            </div>
-            <div class="center aligned column">
-                <i class="empty heart icon"></i>
-                <p>PRODUCTS</p>
-                <p>
-                    Select outstanding financial products from a wide, competitive market and obtain best execution and lowest prices.
-                </p>
-            </div>
-            <div class="center aligned column">
-                <i class="empty heart icon"></i>
-                <p>MANAGERS</p>
-                <p>
-                    Appoint the third-party managers who share our commitment to excellence, without the limitations imposed by the restrictions of a single firm.
-                </p>
+        <div class="ui container">
+            <div class="ui three column grid" style="padding-top:5%;">
+                <div class="center aligned services column">
+                    <i class="users icon" style="font-size:50px;font-weight:400;"></i>
+                    <h4 class="ui header">FIDUCIARY</h4>
+                    <p>
+                        Serve as a fiduciary who puts your interests first.
+                    </p>
+                </div>
+                <div class="center aligned services column">
+                    <i class="university icon" style="font-size:50px;font-weight:400;"></i>
+                    <h4 class="ui header">CUSTODIAN</h4>
+                    <p>
+                        Engage a third party custodian – a secure, stable, highly reputable financial safekeeping company.
+                    </p>
+                </div>
+                <div class="center aligned services column">
+                    <i class="idea icon" style="font-size:50px;font-weight:400;"></i>
+                    <h4 class="ui header">IDEAS</h4>
+                    <p>
+                        React quickly to new ideas – a benefit of autonomy from a distant bureaucracy.
+                    </p>
+                </div>
+                <div class="center aligned services column">
+                    <i class="mobile icon" style="font-size:50px;font-weight:400;"></i>
+                    <h4 class="ui header">THIRD-PARTY</h4>
+                    <p>
+                        Secure third-party service providers who provide compliance support, technology, and marketing.
+                    </p>
+                </div>
+                <div class="center aligned services column">
+                    <i class="shop icon" style="font-size:50px;font-weight:400;"></i>
+                    <h4 class="ui header">PRODUCTS</h4>
+                    <p>
+                        Select outstanding financial products from a wide, competitive market and obtain best execution and lowest prices.
+                    </p>
+                </div>
+                <div class="center aligned services column">
+                    <i class="area chart icon" style="font-size:50px;font-weight:400;"></i>
+                    <h4 class="ui header">MANAGERS</h4>
+                    <p>
+                        Appoint the third-party managers who share our commitment to excellence, without the limitations imposed by the restrictions of a single firm.
+                    </p>
+                </div>
             </div>
         </div>
 

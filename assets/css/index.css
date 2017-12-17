@@ -1,0 +1,108 @@
+img.footerlogo {
+    margin-bottom: 15px;
+}
+
+div#footer1 {
+    padding-top: 3%;
+}
+
+div#footer2 {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: smaller;
+}
+
+.footer.column {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+}
+
+.ui.top.attached.secondary.pointing.menu {
+    justify-content: space-around;
+}
+
+#tabs > .ui.menu .item {
+    color: #B08B66;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+
+.ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.ui.attached.menu:not(.tabular) {
+    border: 1px solid #373C42;
+}
+
+.ui.bottom.attached.tab.segment {
+    border: none;
+    background-color: #373C42;
+}
+
+div#tabs {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    background-color: #373C42;
+    color: white;
+    margin-bottom: 4px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: 'Capitolium-News-2'!important;
+    font-weight: normal;
+}
+
+h4.ui.header {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+#splash {
+    height: 100vh;
+    background-image: url("../images/Home01.jpg");
+    background-attachment: fixed  !important;
+    background-position: center  !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover  !important;
+}
+
+#splashtext {
+    margin-top: 60vh;
+    margin-right: 5vw !important;
+}
+
+.ui.large.secondary.inverted.pointing.menu {
+    border: none;
+}
+
+.parallax {
+    color: white;
+    /* The image used */
+    background-image: url("../images/parallax.jpg") !important;
+
+    /* Full height */
+    height: 100%  !important;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed  !important;
+    background-position: center  !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover  !important;
+}
