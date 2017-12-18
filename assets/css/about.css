@@ -71,7 +71,7 @@ h4.ui.header {
 }
 
 .meettheteam.column {
-    padding: 5% 2% 10% 2% !important;
+    padding: 5% 2% 0% 2% !important;
 }
 
 p.meettheteam.subtitle {
@@ -89,4 +89,24 @@ p.meettheteam.text {
     line-height: 30px;
     font-weight: 400;
     font-family: 'Raleway', sans-serif;
+}
+
+.ui.center.aligned.about.container {
+    padding-top: 10%;
+}
+
+.whoweare > h4.ui.header:after, .whoweare > h4.ui.header:before {
+    display: none !important;
+}
+
+.about > h4.ui.header:after, .about > h4.ui.header:before {
+    display: none !important;
+}
+
+.meettheteam > h4.ui.header {
+    font-size: 14px;
+}
+
+.meettheteam > h4.ui.header:after {
+    display: none !important;
 }

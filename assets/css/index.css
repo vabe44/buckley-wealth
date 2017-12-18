@@ -55,15 +55,6 @@ h4.ui.header {
     font-weight: normal;
 }
 
-h4.ui.header:after, h4.ui.header:before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 1px;
-    border-bottom: 1px solid #000000;
-    margin: 0 14px 4px;
-}
-
 .wrapper {
     margin: 3em 0;
 }

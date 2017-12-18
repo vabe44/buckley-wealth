@@ -28,6 +28,15 @@
     font-weight: 400;
 }
 
+#splashtext h2:after, #splashtext h2:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    border-bottom: 2px solid white;
+    margin: 0 20px 10px;
+}
+
 #splashtext h1 {
     font-size: 105px;
     letter-spacing: 5px;
@@ -75,7 +84,7 @@ h1 {
 
 h4.ui.header {
     font-family: 'Capitolium-News-2'!important;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 4.5px;
     margin-bottom: 25px;

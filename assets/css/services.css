@@ -50,8 +50,27 @@ h4.ui.header {
     text-transform: uppercase;
 }
 
+.evolution.column {
+    background: url(../images/bp04.jpg);
+    background-size: cover;
+}
+
+.independence.column {
+    background: url(../images/bp05.jpg);
+    background-size: cover;
+}
+
+.middle.aligned.services.column {
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+}
+
+.services > h4.ui.header:after, .services > h4.ui.header:before {
+    display: none !important;
+}
+
 .ui.services.text.container {
-    padding: 0% 13% 0% 13%
+    padding: 0% 20% 0% 13%
 }
 
 p.servicestext {
