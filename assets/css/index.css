@@ -64,13 +64,6 @@ h4.ui.header:after, h4.ui.header:before {
     margin: 0 14px 4px;
 }
 
-/* a.indexlink {
-    color: black;
-    letter-spacing: 3px;
-    font-size: larger;
-    font-weight: 400;
-} */
-
 .wrapper {
     margin: 3em 0;
 }
@@ -98,7 +91,7 @@ a.indexlink:hover {
 a.indexlink.before:before,
 a.indexlink.after:after {
     content: "";
-    transition: 0.5s all ease;
+    transition: 0.35s all ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
@@ -117,7 +110,7 @@ a.indexlink.after:after {
     height: 5px;
     height: 0.2rem;
     width: 0;
-    background: #d73444;
+    background: black;
     margin-bottom: -5px;
 }
 
@@ -129,7 +122,8 @@ a.indexlink:after {
 
 a.indexlink.before:hover:before,
 a.indexlink.after:hover:after {
-    width: 25px;
+    /* width: 25px; */
+    width: 100%;
 }
 
 #splash {
@@ -163,4 +157,11 @@ a.indexlink.after:hover:after {
     background-position: center  !important;
     background-repeat: no-repeat  !important;
     background-size: cover  !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #splashtext {
+        margin-top: 50vh;
+    }
 }
