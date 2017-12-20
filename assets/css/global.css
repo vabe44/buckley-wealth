@@ -315,4 +315,16 @@ div#footer2 {
         padding-right: 5%!important;
     }
 
+    .topmenulogo {
+        width: 30%;
+        height: 30%;
+        display: unset;
+        margin-right: -50%;
+    }
+
+    .ui.large.secondary.inverted.pointing.menu {
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row-reverse; */
+    }
 }
