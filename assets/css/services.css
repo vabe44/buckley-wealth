@@ -61,8 +61,8 @@ h4.ui.header {
 }
 
 .middle.aligned.services.column {
-    padding-top: 5% !important;
-    padding-bottom: 5% !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 
 .services > h4.ui.header:after, .services > h4.ui.header:before {
@@ -70,12 +70,12 @@ h4.ui.header {
 }
 
 .ui.services.text.container {
-    padding: 0% 20% 0% 13%
+    padding: 0 40px 0 0px;
 }
 
 p.servicestext {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 div#workwithus {
@@ -88,7 +88,7 @@ a.mailtolink {
 }
 
 .center.aligned.services.column {
-    padding: 5% 3% 5% 3%;
+    padding: 40px 10px 40px 10px;
 }
 
 .ui.large.secondary.inverted.pointing.menu {
