@@ -109,3 +109,30 @@ a.mailtolink {
     background-repeat: no-repeat  !important;
     background-size: cover  !important;
 }
+
+@media only screen and (max-width: 767px) {
+    .evolution.column, .independence.column {
+        min-height: 50%;
+    }
+
+    .independence.column {
+        top: 50%;
+    }
+
+    .middle.aligned.ind.services.column {
+        top: 50%;
+    }
+
+    .ui.vertical.stripe.quote.trirow.segment {
+        margin-top: 150%;
+    }
+
+    .top.aligned.icon.services.column > i.icon {
+        margin-top: 20%;
+    }
+
+    .ui.services.text.container {
+        padding: 0% 0% 0% 0%;
+        text-align: justify;
+    }
+}

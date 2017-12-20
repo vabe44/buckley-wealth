@@ -110,3 +110,9 @@ p.meettheteam.text {
 .meettheteam > h4.ui.header:after {
     display: none !important;
 }
+
+@media only screen and (max-width: 700px) {
+    .ui.vertical.stripe.quote.segment {
+        padding-top: 10%;
+    }
+}

@@ -283,11 +283,11 @@ div#footer2 {
     .ui.fixed.menu {
         display: none !important;
     }
-    .secondary.pointing.menu .item,
-    .secondary.pointing.menu .menu {
+    .ui.large.secondary.inverted.pointing.menu .item,
+    .ui.large.secondary.inverted.pointing.menu .menu {
         display: none;
     }
-    .secondary.pointing.menu .toc.item {
+    .ui.large.secondary.inverted.pointing.menu .toc.item {
         display: block;
     }
     .masthead.segment {
@@ -300,6 +300,10 @@ div#footer2 {
     .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
+    }
+
+    .topmenulogo {
+        display: none;
     }
 
 }
